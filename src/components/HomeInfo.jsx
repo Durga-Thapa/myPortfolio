@@ -7,10 +7,10 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
         Hi, I'm
-        <span className='font-semibold mx-2 text-white'>Adrian</span>
+        <span className='font-semibold mx-2 text-white'>Durga</span>
         👋
         <br />
-        A Software Engineer from Croatia 🇭🇷
+        Full Stack Developer(Backend Focused) & Backend Developer
       </h1>
     );
 
@@ -18,7 +18,9 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium sm:text-xl text-center'>
-          Worked with many companies <br /> and picked up many skills along the way
+        I have hands-on experience building REST APIs
+          <br />
+          using Node.js, NestJS, MongoDB, and PostgreSQL.
         </p>
 
         <Link to='/about' className='neo-brutalism-white neo-btn'>
@@ -33,7 +35,9 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Led multiple projects to success over the years. <br /> Curious about the impact?
+           Built projects including LMS, CMS,
+          <br />
+          Task Management, Chat, Blog, and E-commerce APIs.
         </p>
 
         <Link to='/projects' className='neo-brutalism-white neo-btn'>
@@ -48,7 +52,9 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
       <p className='font-medium sm:text-xl text-center'>
-        Need a project done or looking for a dev? <br/> I'm just a few keystrokes away
+         Looking for a Backend or Full Stack Developer?
+          <br />
+          Let's build something great together.
       </p>
 
       <Link to='/contact' className='neo-brutalism-white neo-btn'>

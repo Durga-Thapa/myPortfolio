@@ -1,228 +1,317 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
-    car,
-    contact,
-    css,
-    estate,
-    express,
-    git,
-    github,
-    html,
-    javascript,
-    linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
-    pricewise,
-    react,
-    redux,
-    sass,
-    snapgram,
-    summiz,
-    tailwindcss,
-    threads,
-    typescript
+  FaServer,
+  FaCode,
+  FaNodeJs,
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaGitAlt,
+  FaGithub,
+  FaDocker,
+  FaFigma,
+  FaBootstrap,
+} from "react-icons/fa";
+
+import {
+  SiNestjs,
+  SiExpress,
+  SiTypescript,
+  SiMongodb,
+  SiPostgresql,
+  SiMysql,
+  SiSqlite,
+  SiPrisma,
+  SiMongoose,
+  SiTailwindcss,
+  SiSwagger,
+  SiPostman,
+  SiVercel,
+  SiRender,
+} from "react-icons/si";
+
+import { starbucks, tesla, shopify, sipalaya, demouse, nepova, yoddha } from "../assets/images";
+
+import {
+  car,
+  contact,
+  estate,
+  github,
+  linkedin,
+  pricewise,
+  snapgram,
+  summiz,
+  threads,
 } from "../assets/icons";
 
+// =========================
+// SKILLS
+// =========================
+
 export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+  {
+    icon: FaHtml5,
+    name: "HTML",
+    type: "Frontend",
+  },
+  {
+    icon: FaCss3Alt,
+    name: "CSS",
+    type: "Frontend",
+  },
+  {
+    icon: FaJs,
+    name: "JavaScript",
+    type: "Frontend",
+  },
+  {
+    icon: FaReact,
+    name: "React",
+    type: "Frontend",
+  },
+  {
+    icon: FaBootstrap,
+    name: "Bootstrap",
+    type: "Frontend",
+  },
+  {
+    icon: SiTailwindcss,
+    name: "Tailwind CSS",
+    type: "Frontend",
+  },
+  {
+    icon: FaNodeJs,
+    name: "Node.js",
+    type: "Backend",
+  },
+  {
+    icon: SiNestjs,
+    name: "NestJS",
+    type: "Backend",
+  },
+  {
+    icon: SiExpress,
+    name: "Express.js",
+    type: "Backend",
+  },
+  {
+    icon: SiTypescript,
+    name: "TypeScript",
+    type: "Frontend / Backend",
+  },
+  {
+    icon: SiMongodb,
+    name: "MongoDB",
+    type: "Database",
+  },
+  {
+    icon: SiMongoose,
+    name: "Mongoose",
+    type: "ODM",
+  },
+  {
+    icon: SiPostgresql,
+    name: "PostgreSQL",
+    type: "Database",
+  },
+  {
+    icon: SiPrisma,
+    name: "Prisma",
+    type: "ORM",
+  },
+  {
+    icon: SiMysql,
+    name: "MySQL",
+    type: "Database",
+  },
+  {
+    icon: SiSqlite,
+    name: "SQLite",
+    type: "Database",
+  },
+  {
+    icon: FaGitAlt,
+    name: "Git",
+    type: "Version Control",
+  },
+  {
+    icon: FaGithub,
+    name: "GitHub",
+    type: "Version Control",
+  },
+  {
+    icon: SiPostman,
+    name: "Postman",
+    type: "API Testing",
+  },
+  {
+    icon: SiSwagger,
+    name: "Swagger",
+    type: "API Documentation",
+  },
+  {
+    icon: FaDocker,
+    name: "Docker",
+    type: "DevOps",
+  },
+  {
+    icon: SiVercel,
+    name: "Vercel",
+    type: "Deployment",
+  },
+  {
+    icon: SiRender,
+    name: "Render",
+    type: "Deployment",
+  },
+  {
+    icon: FaFigma,
+    name: "Figma",
+    type: "Design",
+  },
 ];
+
+// =========================
+// WORK EXPERIENCE
+// =========================
 
 export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+  {
+    title: "Full Stack Developer Instructor",
+    company_name: "Demouse",
+    icon: demouse,
+    iconBg: "#accbe1",
+    date: "August 2026 - Present",
+    points: [
+      "Trained students in frontend, backend, databases, and full-stack web development.",
+      "Guided students in building real-world web projects using modern development tools.",
+      "Mentored students in coding, debugging, Git, and software development best practices.",
+      "Collaborated on practical development tasks and real-world project workflows.",
+    ],
+  },
+  {
+    title: "Full Stack Developer Intern & Instructor",
+    company_name: "Sipalaya Info Tech",
+    icon: sipalaya,
+    iconBg: "#accbe1",
+    date: "May 2026 - August 2026",
+    points: [
+      "Assisted students in learning MERN Stack development concepts and practical implementation.",
+      "Developed full-stack web applications and integrated REST APIs.",
+      "Supported debugging, frontend-backend integration, and database operations.",
+      "Collaborated on practical development tasks and real-world project workflows.",
+    ],
+  },
+  {
+    title: "Backend Developer Trainee",
+    company_name: "Nepova Technologies Pvt. Ltd.",
+    icon: nepova,
+    iconBg: "#fbc3bc",
+    date: "December 2025 - April 2026",
+    points: [
+      "Assisted in developing REST APIs using Node.js and NestJS.",
+      "Implemented CMS features and Role-Based Access Control (RBAC).",
+      "Designed MongoDB and PostgreSQL schemas.",
+      "Worked with JWT authentication for secure API endpoints.",
+      "Created APIs for LMS modules and dynamic website content.",
+      "Tested and debugged APIs using Postman.",
+    ],
+  },
+  {
+    title: "Backend Developer Intern",
+    company_name: "Yoddha Lab Pvt. Ltd.",
+    icon: yoddha,
+    iconBg: "#b7e4c7",
+    date: "January 2025 - April 2025",
+    points: [
+      "Built and maintained RESTful APIs using Node.js and Express.js.",
+      "Designed database schemas using MongoDB and PostgreSQL.",
+      "Debugged middleware and optimized API queries.",
+      "Participated in Agile development and code reviews.",
+      "Worked with frontend developers to integrate backend services.",
+    ],
+  },
 ];
+
+// =========================
+// SOCIAL LINKS
+// =========================
 
 export const socialLinks = [
-    {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
-    {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
-    }
+  {
+    name: "Contact",
+    iconUrl: contact,
+    link: "/contact",
+  },
+  {
+    name: "GitHub",
+    iconUrl: github,
+    link: "https://github.com/Durga-Thapa",
+  },
+  {
+    name: "LinkedIn",
+    iconUrl: linkedin,
+    link: "https://www.linkedin.com/",
+  },
 ];
 
+// =========================
+// PROJECTS
+// =========================
+
 export const projects = [
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+  {
+    iconUrl: pricewise,
+    theme: "btn-back-red",
+    name: "TaskAssignment",
+    description:
+      "A role-based academic task management system supporting Admin, Teacher, and Student roles with JWT authentication, RBAC, assignments, submissions, grading, and feedback.",
+    technologies: "NestJS, TypeScript, MongoDB, Mongoose, JWT, RBAC",
+    link: "https://github.com/Durga-Thapa/TaskAssignment",
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-green",
+    name: "CMS - Content Management System",
+    description:
+      "A scalable CMS API for managing dynamic website content with modular architecture, validation, slug management, REST APIs, and image uploads.",
+    technologies: "NestJS, TypeScript, MongoDB, REST API, Multer",
+    link: "https://github.com/Durga-Thapa/CMS-Project",
+  },
+  {
+    iconUrl: car,
+    theme: "btn-back-blue",
+    name: "Learning Management System",
+    description:
+      "A full-scale LMS backend with course management, lessons, enrollment, progress tracking, authentication, and role-based access control.",
+    technologies: "NestJS, TypeScript, PostgreSQL, Prisma, JWT, RBAC",
+    link: "https://github.com/Durga-Thapa",
+  },
+  {
+    iconUrl: snapgram,
+    theme: "btn-back-pink",
+    name: "Chat API",
+    description:
+      "A scalable chat backend with secure authentication, role-based access control, message handling, pagination, filtering, and search.",
+    technologies: "NestJS, Node.js, TypeScript, JWT, REST API",
+    link: "https://github.com/Durga-Thapa",
+  },
+  {
+    iconUrl: estate,
+    theme: "btn-back-black",
+    name: "Blog API",
+    description:
+      "A full-featured REST API supporting blog posts, nested comments, likes, file uploads, JWT authentication, and role-based access control.",
+    technologies: "NestJS, MongoDB, PostgreSQL, JWT, RBAC",
+    link: "https://github.com/Durga-Thapa/BlogAPI",
+  },
+  {
+    iconUrl: summiz,
+    theme: "btn-back-yellow",
+    name: "E-commerce API",
+    description:
+      "A RESTful e-commerce backend handling products, carts, orders, order items, and product image uploads.",
+    technologies: "Node.js, Express.js, MongoDB, Mongoose, Multer",
+    link: "https://github.com/Durga-Thapa/E-commApi",
+  },
 ];
