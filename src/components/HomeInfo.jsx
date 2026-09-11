@@ -5,9 +5,9 @@ import { arrow } from "../assets/icons";
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
     return (
-      <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
+      <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
         Hi, I'm
-        <span className='font-semibold mx-2 text-white'>Durga</span>
+        <span className="font-semibold mx-2 text-white">Durga</span>
         👋
         <br />
         Full Stack Developer(Backend Focused) & Backend Developer
@@ -16,16 +16,16 @@ const HomeInfo = ({ currentStage }) => {
 
   if (currentStage === 2) {
     return (
-      <div className='info-box'>
-        <p className='font-medium sm:text-xl text-center'>
-        I have hands-on experience building REST APIs
+      <div className="info-box">
+        <p className="font-medium sm:text-xl text-center">
+          I have hands-on experience building REST APIs
           <br />
-          using Node.js, NestJS, MongoDB, and PostgreSQL.
+          using React, Node.js, NestJS, MongoDB, and PostgreSQL.
         </p>
 
-        <Link to='/about' className='neo-brutalism-white neo-btn'>
+        <Link to="/about" className="neo-brutalism-white neo-btn">
           Learn more
-          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
         </Link>
       </div>
     );
@@ -33,16 +33,16 @@ const HomeInfo = ({ currentStage }) => {
 
   if (currentStage === 3) {
     return (
-      <div className='info-box'>
-        <p className='font-medium text-center sm:text-xl'>
-           Built projects including LMS, CMS,
+      <div className="info-box">
+        <p className="font-medium text-center sm:text-xl">
+          Built projects including LMS, CMS,
           <br />
-          Task Management, Chat, Blog, and E-commerce APIs.
+          DocApp, Task Management, and Chat.
         </p>
 
-        <Link to='/projects' className='neo-brutalism-white neo-btn'>
+        <Link to="/projects" className="neo-brutalism-white neo-btn">
           Visit my portfolio
-          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
         </Link>
       </div>
     );
@@ -50,18 +50,18 @@ const HomeInfo = ({ currentStage }) => {
 
   if (currentStage === 4) {
     return (
-      <div className='info-box'>
-      <p className='font-medium sm:text-xl text-center'>
-         Looking for a Backend or Full Stack Developer?
+      <div className="info-box">
+        <p className="font-medium sm:text-xl text-center">
+          Looking for a Backend or Full Stack Developer?
           <br />
           Let's build something great together.
-      </p>
+        </p>
 
-      <Link to='/contact' className='neo-brutalism-white neo-btn'>
-        Let's talk
-        <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
-      </Link>
-    </div>
+        <Link to="/contact" className="neo-brutalism-white neo-btn">
+          Let's talk
+          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+        </Link>
+      </div>
     );
   }
 

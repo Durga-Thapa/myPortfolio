@@ -183,10 +183,10 @@ export const experiences = [
     iconBg: "#accbe1",
     date: "August 2026 - Present",
     points: [
-      "Trained students in frontend, backend, databases, and full-stack web development.",
-      "Guided students in building real-world web projects using modern development tools.",
-      "Mentored students in coding, debugging, Git, and software development best practices.",
-      "Collaborated on practical development tasks and real-world project workflows.",
+      "Train students in frontend, backend, databases, and full-stack web development.",
+      "Guide students in building real-world web projects using modern development tools.",
+      "Mentor students in coding, debugging, Git, and software development best practices.",
+      "Collaborate on practical development tasks and real-world project workflows.",
     ],
   },
   {
@@ -261,6 +261,15 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: estate,
+    theme: "btn-back-black",
+    name: "DocApp - Full Stack",
+    description:
+      "A full-stack doctor appointment platform with authentication, RBAC, REST APIs, and responsive frontend features.",
+technologies: "React, Node.js, Express.js, MongoDB, JWT",
+    link: "https://github.com/Durga-Thapa/DocApp",
+  },
+  {
     iconUrl: pricewise,
     theme: "btn-back-red",
     name: "TaskAssignment",
@@ -295,23 +304,5 @@ export const projects = [
       "A scalable chat backend with secure authentication, role-based access control, message handling, pagination, filtering, and search.",
     technologies: "NestJS, Node.js, TypeScript, JWT, REST API",
     link: "https://github.com/Durga-Thapa",
-  },
-  {
-    iconUrl: estate,
-    theme: "btn-back-black",
-    name: "Blog API",
-    description:
-      "A full-featured REST API supporting blog posts, nested comments, likes, file uploads, JWT authentication, and role-based access control.",
-    technologies: "NestJS, MongoDB, PostgreSQL, JWT, RBAC",
-    link: "https://github.com/Durga-Thapa/BlogAPI",
-  },
-  {
-    iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "E-commerce API",
-    description:
-      "A RESTful e-commerce backend handling products, carts, orders, order items, and product image uploads.",
-    technologies: "Node.js, Express.js, MongoDB, Mongoose, Multer",
-    link: "https://github.com/Durga-Thapa/E-commApi",
   },
 ];
